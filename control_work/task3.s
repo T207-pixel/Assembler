@@ -91,6 +91,6 @@ Delta:
     
 end:
     mov	    x0, #0
-	mov	    x8, #93
-	svc	    #0
-	.size	_start, .-_start
+    mov	    x8, #93	
+    svc	    #0
+    .size	_start, .-_start
