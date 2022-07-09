@@ -33,14 +33,12 @@ int main() {
     double myCos = 1.0;
     int i = 1;
     std::cout << "Delta: "<< myAbs(realCos - myCos) << std::endl;
-
     while (myAbs(realCos - myCos) > accuracy){
         double current = 0;
         current = (1 - (4*pow(x,2))/(pow((2*i-1),2)*pow(Pi,2)));
         myCos = myCos * current;
         i++;
     }
-
     printf("Math.h cos: %.10f\n", realCos);
     printf("My cos: %.10f", myCos);
     return 0;
