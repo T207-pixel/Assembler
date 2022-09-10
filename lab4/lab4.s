@@ -164,7 +164,7 @@ go:
     //str     s11, [x29, -4]
     fdiv    s11, s0, s11        //(4*pow(x,2))/(pow((2*i-1),2)*pow(Pi,2))
     //str     s11, [x29, -4]
-    fmul    s12, s3, s11        //current
+    fsub    s12, s3, s11        //current
     //str     s12, [x29, -4]
     fmov    s8, s12             //current
     //str     s8, [x29, -4]
